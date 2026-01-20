@@ -20,6 +20,10 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+
+      - name: Initialize project (if package.json doesn't exist)
+        run: bun init -y  # 非交互式初始化
+
       
       - name: 安装依赖
         run: bun install

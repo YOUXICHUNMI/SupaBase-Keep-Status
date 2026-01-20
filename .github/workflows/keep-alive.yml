@@ -27,6 +27,9 @@ jobs:
       
       - name: 安装依赖
         run: bun install
+
+      - name: 安装依赖
+        run: bun add @supabase/supabase-js
       
       - name: 执行保活脚本
         env:
